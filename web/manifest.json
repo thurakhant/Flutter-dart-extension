@@ -1,0 +1,35 @@
+{
+    "name": "flutter_dart_extenstion",
+    "short_name": "flutter_dart_extenstion",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "If you find this Dart extension for customizing UI widgets helpful and time-saving, I kindly suggest considering its use in your projects. Should you feel it offers value to the Flutter community, you may wish to share it with others on platforms like GitHub, where fellow developers can support it by giving it stars. Your thoughtful consideration and potential contributions, including stars, would be greatly appreciated.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
