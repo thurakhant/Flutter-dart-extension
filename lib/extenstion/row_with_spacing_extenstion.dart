@@ -1,22 +1,25 @@
 import 'package:flutter/material.dart';
 
-extension RowSpacingExtension on List<Widget> {
-  Widget rowWithSpacing({
+extension CustomRowExtension on Row {
+  Widget customRowWithSpacing({
     double spacing = 8.0,
+    List<Widget> children = const <Widget>[],
+    MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start,
+    CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center,
   }) {
     return Row(
-      children: [
-        for (var i = 0; i < length; i++)
-          Row(
-            children: [
-              this[i],
-              if (i < length - 1)
-                SizedBox(
-                  width: spacing,
-                ),
-            ],
-          ),
-      ],
+      mainAxisAlignment: mainAxisAlignment,
+      crossAxisAlignment: crossAxisAlignment,
+      children: children
+          .map((child) => Row(
+                children: [
+                  child,
+                  SizedBox(
+                    width: spacing,
+                  ),
+                ],
+              ))
+          .toList(),
     );
   }
 }
